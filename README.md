@@ -1,4 +1,4 @@
-# This is a repostory of the deployment on AWS Platform
+# This is a repository of the deployment on AWS Platform
 
 <img width="1280" alt="Screen Shot 2023-05-31 at 2 13 18 AM" src="https://github.com/mahmoudmosaad82/AWS-Deployment/assets/66203316/f5ac976f-9a00-45e9-8cbe-9c4468414dc4">
 ### 1st page that will take me to the form that will take the entries from user
