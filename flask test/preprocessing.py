@@ -31,7 +31,7 @@ def preprocess_data(raw_data):
     output['invested_companies'] = float(raw_data[4])
 
     # milestones no preprocessing needed
-    output['milesstones'] = float(raw_data[8])
+    output['milestones'] = float(raw_data[8])
 
     #preprocess updated_at raw_data[2]
     var2 = datetime.datetime.strptime(raw_data[2], "%Y-%m-%d")
