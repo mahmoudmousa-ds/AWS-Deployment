@@ -59,19 +59,31 @@
 <body>
     <div>
         <h1><strong><u><b>RESULTS!</b></u></strong></h1> 
-                 <p><b>PREDICTION - Company is (Operating/closed) : {{ n[0] }}</b></p>
+                 
+            
                   <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                 <p><b>PREDICTION - Status Of the company  (Operating/IPO/Closed/Acquired) : {{ n[1] }}</b></p>
+                 <p>
+                 
+                         {% if n[0] == 1 %}
+                            The Company is predicted to be Closed
+                         {% else %}
+                            Prediction: Not Closed and The company is Closed and Its Status is
+                             {% if n[1] == 0 %}
+                                 Acquired
+                             {% elif n[1] == 1 %}
+                                 Closed
+                             {% elif n[1] == 2 %}
+                                 IPO
+                             {% elif n[1] == 3 %}
+                                 Operating
+                             {% endif %}
+                         {% endif %}
+                         </p>
      </div>
     </div><br>
              
     <button type="button" class="myButton">
-      <a href="Page1.html" class="button-link">
+      <a href="index.html" class="button-link">
         <strong>Home</strong>
       </a>
     </button>
