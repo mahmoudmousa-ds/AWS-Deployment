@@ -68,13 +68,13 @@ h4{
 </style>
     <title>Compay status</title>
 </head>
-<body background="background.jpg>
+<body background='background.jpg'>
     <div class="container mb-3 text-muted">
       <body>
         </div>
     <br><br>
     <div class="container jumbotron" >
-      <form action="{{url_for('predict')}}" method="post">
+      <form action="{{url_for('predict')}}" method="post" id="defaultvalue">
         <h4><b>CHECK COMPANY STATUS HERE ! </b></h4>
         <div class="form-group">
 
@@ -100,8 +100,9 @@ h4{
 
                 <div class="col-sm-4">
                   <label><b>Closed at: </b></label>
-                  <input class="form-control"  type="date" min="1900" max="2022" step="1" name="Closed_at"/>
+                  <input class="form-control"  type="date" min="1900" max="2022" step="1" name="Closed_at" id="closedDate"/>
                 </div>
+                
 
                 <!-- <div class="col-sm-4">
                   <label><b>Active days of the company: </b></label>    	
@@ -14290,6 +14291,54 @@ h4{
       </form>
     </div>
         
-    </div class="footer">  
+    </div class="footer">
+    <script>
+      // Get the form element
+      var form = document.getElementById('defaultvalue'); // Replace 'yourForm' with the ID of your form
+
+      // Add an event listener to the form submission
+      form.addEventListener('submit', function(event) {
+        // Get the input element by its ID
+        var closedDateInput = document.getElementById('closedDate');
+
+        // Check if the input value is empty
+        if (closedDateInput.value === '') {
+          // Create a new Date object for the current date
+          var currentDate = new Date();
+
+          // Get the current year, month, and day
+          var year = currentDate.getFullYear();
+          var month = String(currentDate.getMonth() + 1).padStart(2, '0');
+          var day = String(currentDate.getDate()).padStart(2, '0');
+
+          // Format the date as YYYY-MM-DD
+          var formattedDate = year + '-' + month + '-' + day;
+
+          // Set the value of the input field to the current date
+          closedDateInput.value = formattedDate;
+        }
+      });
+    </script>
+<!--    <script>-->
+<!--      // Get the input element by its ID-->
+<!--      var closedDateInput = document.getElementById('closedDate');-->
+<!---->
+<!--      // Check if the input value is empty-->
+<!--      if (closedDateInput.value === '') {-->
+<!--        // Create a new Date object for the current date-->
+<!--        var currentDate = new Date();-->
+<!---->
+<!--        // Get the current year, month, and day-->
+<!--        var year = currentDate.getFullYear();-->
+<!--        var month = String(currentDate.getMonth() + 1).padStart(2, '0');-->
+<!--        var day = String(currentDate.getDate()).padStart(2, '0');-->
+<!---->
+<!--        // Format the date as YYYY-MM-DD-->
+<!--        var formattedDate = year + '-' + month + '-' + day;-->
+<!---->
+<!--        // Set the value of the input field to the current date-->
+<!--        closedDateInput.value = formattedDate;-->
+<!--      }-->
+<!--    </script>-->
   </body>
 </html>
