@@ -1,4 +1,4 @@
-# This is a repository of the deployment on AWS Platform
+# This is a repository of the deployment of Web Service on AWS Platform using EC2, the framework used is flask that handle all APIs.
 The deployment of a machine learning model on AWS using a web service like a website. The purpose of this deployment is to enable others to test their results and get feedback from the model. The web service will allow users to upload their data, select the model parameters, and view the output. The web service will also provide some basic statistics and visualizations of the results. The deployment process results are as below : 
 
 ### 1st page that will take me to the form that will take the entries from user
