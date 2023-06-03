@@ -25,3 +25,6 @@ The deployment of a machine learning model on AWS using a web service like a web
 
 ### The Predicted Result that I have finally.
 <img width="1280" alt="Screen Shot 2023-05-31 at 10 01 45 AM" src="https://github.com/mahmoudmosaad82/AWS-Deployment/assets/66203316/a663ae15-ffe3-461d-b6ae-de73da70c506">
+### Here also some other results for variant companies.
+<img width="1277" alt="Screen Shot 2023-06-03 at 9 36 13 PM" src="https://github.com/mahmoudmosaad82/AWS-Deployment/assets/66203316/93e57149-d4ed-4b7f-8301-f91be79e1e08">
+<img width="1275" alt="Screen Shot 2023-06-03 at 9 36 00 PM" src="https://github.com/mahmoudmosaad82/AWS-Deployment/assets/66203316/ffd04890-5aa5-4335-81f4-3dd21952d995">
