@@ -65,9 +65,7 @@
                  <p>
                  
                          {% if n[0] == 1 %}
-                            The Company is predicted to be Closed
-                         {% else %}
-                            Prediction: Not Closed and The company is Closed and Its Status is
+                           Prediction: Not Closed and The company is Closed and Its Status is
                              {% if n[1] == 0 %}
                                  Acquired
                              {% elif n[1] == 1 %}
@@ -77,6 +75,10 @@
                              {% elif n[1] == 3 %}
                                  Operating
                              {% endif %}
+                         {% else %}
+                                              The Company is predicted to be Closed
+
+                            
                          {% endif %}
                          </p>
      </div>
